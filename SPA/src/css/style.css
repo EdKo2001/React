@@ -1,0 +1,283 @@
+body {
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background-color: lightblue;
+}
+
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.App {
+	background-color: white;
+	width: 100%;
+	max-width: 992px;
+	margin: 0 auto;
+	margin-top: 10px;
+}
+
+.container {
+	width: 100%;
+	max-width: 950px;
+	margin: 0 auto;
+}
+
+.header {
+	background-color: orange;
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+a {
+	text-decoration: none;
+}
+
+.nav-links {
+	list-style-type: none;
+	display: flex;
+	width: 50%;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.nav-links a {
+	margin-right: 5%;
+	color: black;
+}
+
+.nav-links a:hover {
+	text-decoration: underline;
+}
+
+.nav-links svg {
+	padding-right: 5px;
+}
+
+.nav-links li:first-child {
+	display: flex;
+	align-items: center;
+}
+
+.active {
+	color: white !important;
+	background: yellowgreen;
+	padding: 5px;
+}
+
+nav h3 {
+	color: blue;
+	font-size: 30px;
+}
+
+.main {
+	height: 400px;
+	margin-top: 80px;
+}
+
+.main__blog {
+	height: 450px;
+	padding-top: 10px;
+}
+
+.items {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.item__img {
+	height: 250px;
+	width: 400px;
+}
+
+.item h3 {
+	text-decoration: none;
+	color: black;
+	text-align: center;
+}
+
+.back {
+	color: white;
+	background: palegreen;
+	padding: 10px 15px;
+	margin-bottom: 10px;
+	display: block;
+	width: max-content;
+}
+
+.single-page {
+	padding: 50px 0;
+}
+
+.single-page img {
+	display: block;
+	margin: auto;
+	width: 50%;
+}
+
+.single-page h3 {
+	text-align: center;
+	font-size: 30px;
+}
+
+.hRVZRB {
+	height: 400px !important;
+	font-size: 2em !important;
+	text-align: center;
+	background: inherit !important;
+}
+
+.hRVZRB h3 {
+	margin: 0;
+}
+
+
+/* Position and sizing of burger button */
+
+.bm-burger-button {
+	position: relative;
+	width: 36px;
+	height: 30px;
+	right: 0;
+	display: none;
+}
+
+
+/* Color/shape of burger icon bars */
+
+.bm-burger-bars {
+	background: #373a47;
+}
+
+
+/* Color/shape of burger icon bars on hover*/
+
+.bm-burger-bars-hover {
+	background: #a90000;
+}
+
+
+/* Position and sizing of clickable cross button */
+
+.bm-cross-button {
+	height: 24px;
+	width: 24px;
+	right: 15px !important;
+	top: 15px !important;
+}
+
+
+/* Color/shape of close button cross */
+
+.bm-cross {
+	background: #bdc3c7;
+	width: 5px !important;
+	height: 18px !important;
+}
+
+
+/*
+  Sidebar wrapper styles
+  Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+  */
+
+.bm-menu-wrap {
+	position: fixed;
+	height: 100%;
+	top: 0px;
+}
+
+
+/* General sidebar styles */
+
+.bm-menu {
+	background: #373a47;
+	padding: 4em 1.5em 0;
+	font-size: 1.15em;
+}
+
+
+/* Morph shape necessary with bubble or elastic */
+
+.bm-morph-shape {
+	fill: #373a47;
+}
+
+
+/* Wrapper for item list */
+
+.bm-item-list {
+	color: #b8b7ad;
+	padding: 0.8em;
+	flex-direction: column;
+	justify-content: unset;
+}
+
+
+/* Individual item */
+
+.bm-item {
+	display: inline-block;
+	margin-bottom: 20px;
+}
+
+
+/* Styling of overlay */
+
+.bm-overlay {
+	background: rgba(0, 0, 0, 0.3);
+	top: 0px;
+	left: 0px;
+}
+
+@media(max-width:500px) {
+	.item__img {
+        max-width: 100%;
+        height: unset;
+        margin-top: 30px;
+	}
+	.nav-links {
+		display: none;
+	}
+	.bm-burger-button {
+		display: block;
+	}
+	.App {
+		margin-top: 0;
+	}
+	.items {
+		flex-direction: column;
+	}
+	.bm-item-list li {
+		list-style: none;
+	}
+	.bm-item {
+		color: white;
+	}
+	.home {
+		display: flex;
+		align-items: center;
+	}
+	.home svg {
+		padding-right: 5px;
+	}
+	.main {
+        height: auto;
+        margin-top: 40px;
+    }
+    .container {
+        width: unset;
+        padding: 0 15px;
+    }
+    .single-page img {
+        width: 100%;
+    }
+    .single-page {
+        padding: 30px 0 10px 0;
+    }
+}
