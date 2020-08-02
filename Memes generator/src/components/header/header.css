@@ -1,0 +1,18 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: aqua;
+    position: relative;
+    padding: 10px 0;
+}
+
+header img {
+    height: 80px;
+    position: absolute;
+    left: 50px;
+}
+
+header h1 {
+    font-size: 50px;
+}

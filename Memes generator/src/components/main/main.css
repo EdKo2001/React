@@ -1,0 +1,55 @@
+form {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+input {
+    font-size: 25px;
+    margin-right: 30px;
+    width: 20%;
+}
+button {
+    color: white;
+    border: none;
+    background: blue;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.main {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 400px;
+}
+
+.main img {
+    height: 400px;
+    width: 600px;
+    z-index: 1;
+    position: absolute;
+}
+
+.main h1 {
+    color: red;
+    font-size: 40px;
+    z-index: 2;
+}
+
+.topText {
+    position: absolute;
+    top: 5px;
+}
+
+.bottomText {
+    position: absolute;
+    bottom: 25px;
+}
+
+.download {
+    margin: auto;
+    margin-top: 20px;
+    display: block;
+}
